@@ -27,13 +27,13 @@ function love.load()
     -- Load grass
     grass_img = love.graphics.newImage("assets/grass.png")
     grass_img:setWrap("repeat", "repeat")
-    grass_quad = love.graphics.newQuad(0, 0, 1024, 768, grass_img:getWidth(), grass_img:getHeight())
+    grass_quad = love.graphics.newQuad(0, 0, 640, 480, grass_img:getWidth(), grass_img:getHeight())
 end
 
 function love.draw()
     -- Adapt to each screen's dpi
     love.graphics.scale(scale, scale)
-    
+
     -- Draw background
     love.graphics.draw(grass_img, grass_quad, 0, 0)
 
