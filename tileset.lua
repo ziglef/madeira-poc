@@ -1,5 +1,5 @@
-function load_tileset(file_path, width, height)
-   local atlas = love.graphics.newImage(file_path)
+function loadTileset(filePath, width, height)
+   local atlas = love.graphics.newImage(filePath)
    local quads = {}
 
    for i = 0, atlas:getHeight()/height - 1 do
